@@ -1,71 +1,67 @@
-Lista de Tarefas 🔧🏠
+# Lista de Tarefas 🔧🏠
 
-Este projeto foi desenvolvido como parte do curso "Criação de Apps Android/iOS/Web com Flutter - 5 cursos em 1".
+Este projeto foi desenvolvido como parte do curso **"Criação de Apps Android/iOS/Web com Flutter - 5 cursos em 1"**.
 
 Trata-se de uma aplicação simples para gerenciar tarefas (“To-Do List”), utilizando Flutter, com funcionalidades como adicionar, marcar como concluído e excluir tarefas, além de salvar os dados localmente.
 
-✨ Funcionalidades
+## ✨ Funcionalidades
 
-Adicionar tarefas: Digite o título de uma tarefa e clique no botão "ADD" para adicioná-la à lista.
+- **Adicionar tarefas**: Digite o título de uma tarefa e clique no botão "ADD" para adicioná-la à lista.
+- **Marcar como concluído**: Use a caixa de seleção para indicar que uma tarefa foi finalizada.
+- **Excluir tarefas**: Deslize uma tarefa para a direita para removê-la.
+- **Desfazer exclusão**: Um "Snackbar" permite desfazer a exclusão de uma tarefa.
+- **Salvar e carregar tarefas**: As tarefas são salvas localmente em um arquivo JSON, garantindo que estejam disponíveis ao reiniciar o app.
+- **Atualização rápida**: Puxe a lista para baixo para reorganizar as tarefas, colocando as concluídas no final.
 
-Marcar como concluído: Use a caixa de seleção para indicar que uma tarefa foi finalizada.
+## 📚 Estrutura do Código
 
-Excluir tarefas: Deslize uma tarefa para a direita para removê-la.
+### Principais componentes:
 
-Desfazer exclusão: Um "Snackbar" permite desfazer a exclusão de uma tarefa.
+- **`Home`**: Componente principal que gerencia o estado do aplicativo e exibe a interface do usuário.
+- **`_addToDo`**: Adiciona uma nova tarefa à lista.
+- **`_refresh`**: Reorganiza a lista de tarefas para destacar as pendentes.
+- **`_saveData`**\*\* e \*\*\*\*`_readData`\*\*: Gerenciam o salvamento e leitura de dados no armazenamento local usando a biblioteca `path_provider`.
 
-Salvar e carregar tarefas: As tarefas são salvas localmente em um arquivo JSON, garantindo que estejam disponíveis ao reiniciar o app.
+## 🎨 Design
 
-Atualização rápida: Puxe a lista para baixo para reorganizar as tarefas, colocando as concluídas no final.
+- **Barra superior**: Exibe o título “Lista de Tarefas”.
+- **Campo de entrada e botão**: Adicione novas tarefas facilmente.
+- **Lista de tarefas**: Visualize e gerencie suas tarefas com uma interface intuitiva.
+- **Estilo**: Cores e ícones simples e agradáveis, destacando a usabilidade.
 
-📚 Estrutura do Código
+## ⚡ Como executar o projeto
 
-Principais componentes:
+1. **Clone o repositório**:
 
-Home: Componente principal que gerencia o estado do aplicativo e exibe a interface do usuário.
+   ```bash
+   git clone https://github.com/ericdiasblu/lista_de_tarefas_remake_flutter
+   ```
 
-_addToDo: Adiciona uma nova tarefa à lista.
+2. **Acesse a pasta do projeto**:
 
-_refresh: Reorganiza a lista de tarefas para destacar as pendentes.
+   ```bash
+   cd lista_de_tarefas_remake_flutter
+   ```
 
-_saveData** e ****_readData**: Gerenciam o salvamento e leitura de dados no armazenamento local usando a biblioteca path_provider.
+3. **Instale as dependências**:
 
-🎨 Design
+   ```bash
+   flutter pub get
+   ```
 
-Barra superior: Exibe o título “Lista de Tarefas”.
+4. **Execute o app**:
 
-Campo de entrada e botão: Adicione novas tarefas facilmente.
+   ```bash
+   flutter run
+   ```
 
-Lista de tarefas: Visualize e gerencie suas tarefas com uma interface intuitiva.
+## 🔧 Tecnologias utilizadas
 
-Estilo: Cores e ícones simples e agradáveis, destacando a usabilidade.
+- **Linguagem**: Dart
+- **Framework**: Flutter
+- **Pacotes**:
+  - *`path_provider`**: Para localizar o caminho dos diretórios no dispositivo.*
+  - *`dart:convert`**: Para manipulação de dados JSON.*
 
-⚡ Como executar o projeto
+---
 
-Clone o repositório:
-
-git clone https://github.com/ericdiasblu/lista_de_tarefas_remake_flutter
-
-Acesse a pasta do projeto:
-
-cd lista_de_tarefas_remake_flutter
-
-Instale as dependências:
-
-flutter pub get
-
-Execute o app:
-
-flutter run
-
-🔧 Tecnologias utilizadas
-
-Linguagem: Dart
-
-Framework: Flutter
-
-Pacotes:
-
-path_provider**: Para localizar o caminho dos diretórios no dispositivo.
-
-dart:convert**: Para manipulação de dados JSON.
