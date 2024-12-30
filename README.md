@@ -1,16 +1,71 @@
-# lista_de_tarefas_remake_flutter
+Lista de Tarefas 🔧🏠
 
-A new Flutter project.
+Este projeto foi desenvolvido como parte do curso "Criação de Apps Android/iOS/Web com Flutter - 5 cursos em 1".
 
-## Getting Started
+Trata-se de uma aplicação simples para gerenciar tarefas (“To-Do List”), utilizando Flutter, com funcionalidades como adicionar, marcar como concluído e excluir tarefas, além de salvar os dados localmente.
 
-This project is a starting point for a Flutter application.
+✨ Funcionalidades
 
-A few resources to get you started if this is your first Flutter project:
+Adicionar tarefas: Digite o título de uma tarefa e clique no botão "ADD" para adicioná-la à lista.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Marcar como concluído: Use a caixa de seleção para indicar que uma tarefa foi finalizada.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Excluir tarefas: Deslize uma tarefa para a direita para removê-la.
+
+Desfazer exclusão: Um "Snackbar" permite desfazer a exclusão de uma tarefa.
+
+Salvar e carregar tarefas: As tarefas são salvas localmente em um arquivo JSON, garantindo que estejam disponíveis ao reiniciar o app.
+
+Atualização rápida: Puxe a lista para baixo para reorganizar as tarefas, colocando as concluídas no final.
+
+📚 Estrutura do Código
+
+Principais componentes:
+
+Home: Componente principal que gerencia o estado do aplicativo e exibe a interface do usuário.
+
+_addToDo: Adiciona uma nova tarefa à lista.
+
+_refresh: Reorganiza a lista de tarefas para destacar as pendentes.
+
+_saveData** e ****_readData**: Gerenciam o salvamento e leitura de dados no armazenamento local usando a biblioteca path_provider.
+
+🎨 Design
+
+Barra superior: Exibe o título “Lista de Tarefas”.
+
+Campo de entrada e botão: Adicione novas tarefas facilmente.
+
+Lista de tarefas: Visualize e gerencie suas tarefas com uma interface intuitiva.
+
+Estilo: Cores e ícones simples e agradáveis, destacando a usabilidade.
+
+⚡ Como executar o projeto
+
+Clone o repositório:
+
+git clone https://github.com/ericdiasblu/lista_de_tarefas_remake_flutter
+
+Acesse a pasta do projeto:
+
+cd lista_de_tarefas_remake_flutter
+
+Instale as dependências:
+
+flutter pub get
+
+Execute o app:
+
+flutter run
+
+🔧 Tecnologias utilizadas
+
+Linguagem: Dart
+
+Framework: Flutter
+
+Pacotes:
+
+path_provider**: Para localizar o caminho dos diretórios no dispositivo.
+
+dart:convert**: Para manipulação de dados JSON.
